@@ -1,0 +1,38 @@
+{
+  "name": "postcss-graeys",
+  "version": "0.0.0",
+  "description": "PostCSS plugin Converts all spelling of grey to grey to avoid breaking CSS  properties.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "spelling",
+    "color",
+    "greyscale",
+    "grey",
+    "gray",
+    "grayscale"
+  ],
+  "author": "Una Kravets",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/una/postcss-graeys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/una/postcss-graeys/issues"
+  },
+  "homepage": "https://github.com/una/postcss-graeys",
+  "dependencies": {
+    "postcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.14.0",
+    "gulp-mocha": "^2.1.2"
+  },
+  "scripts": {
+    "test": "gulp"
+  }
+}
