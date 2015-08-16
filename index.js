@@ -1,13 +1,9 @@
 var postcss = require('postcss');
 
-module.exports = postcss.plugin('postcss-graeys', function (opts) {
-    opts = opts || {};
-
-    // Work with options here
-
+module.exports = postcss.plugin('postcss-graeys', function () {
     return function (css) {
-
-        // Transform CSS AST here
-
+        css.eachDecl(function(decl) {
+        decl.value = decl.value.replace('grey', 'gray');
+    });
     };
 });

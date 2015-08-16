@@ -15,10 +15,22 @@ var test = function (input, output, opts, done) {
 
 describe('postcss-graeys', function () {
 
-    /* Write tests here
+    it('converts grey to gray individually', function (done) {
+        test('p { color: grey; }',
+             'p { color: gray; }',
+             {}, done);
+    });
 
-    it('does something', function (done) {
-        test('a{ }', 'a{ }', { }, done);
-    });*/
+    it('converts dimgrey to dimgray', function (done) {
+        test('p { color: dimgrey; }',
+             'p { color: dimgray; }',
+             {}, done);
+    });
+
+    it('converts a greyscale filter to grayscale', function (done) {
+        test('p { filter: greyscale(50%) }',
+             'p { filter: grayscale(50%) }',
+             {}, done);
+    });
 
 });
